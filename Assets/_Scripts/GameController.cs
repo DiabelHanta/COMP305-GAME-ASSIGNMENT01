@@ -1,4 +1,10 @@
-﻿using UnityEngine;
+﻿/*
+ * NAME:	Khandker Hussain
+ * ID:		300773610
+ * DATE:	11/26/2015
+ * CODE:	Demonstrated in class
+ */
+using UnityEngine;
 using System.Collections;
 
 public class GameController : MonoBehaviour 

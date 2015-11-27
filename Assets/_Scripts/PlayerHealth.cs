@@ -1,4 +1,10 @@
-﻿using UnityEngine;
+﻿/*
+ * NAME:	Khandker Hussain
+ * ID:		300773610
+ * DATE:	11/26/2015
+ * CODE:	"Survival Shooter Tutorial"
+ */
+using UnityEngine;
 using UnityEngine.UI; //Library to use for text and UIs
 using System.Collections;
 

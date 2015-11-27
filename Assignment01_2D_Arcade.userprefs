@@ -1,9 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\..\Tom's Demos (From GitHub)\COMP305-2DPlatformerDemo-master\Assets\_Scripts\PlayerController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\EnemyBunnyController.cs">
     <Files>
-      <File FileName="..\..\Tom's Demos (From GitHub)\COMP305-2DPlatformerDemo-master\Assets\_Scripts\CoinController.cs" Line="20" Column="25" />
-      <File FileName="..\..\Tom's Demos (From GitHub)\COMP305-2DPlatformerDemo-master\Assets\_Scripts\PlayerController.cs" Line="52" Column="21" />
+      <File FileName="Assets\_Scripts\EnemyBunnyController.cs" Line="80" Column="16" />
+      <File FileName="c:\Users\Faim\Desktop\Assignment01_2D_Arcade\Assets\_Scripts\Player.cs" Line="12" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

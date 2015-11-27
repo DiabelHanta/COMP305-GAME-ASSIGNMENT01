@@ -1,9 +1,15 @@
-﻿using UnityEngine;
+﻿/*
+ * NAME:	Khandker Hussain
+ * ID:		300773610
+ * DATE:	11/26/2015
+ * CODE:	"Survival Shooter Tutorial" & Demonstrations from class
+ */
+using UnityEngine;
 using System.Collections;
 
 //note: embed a class with sub properties w/i the inspector (ie. create new properties w/i a class)
 [System.Serializable]
-public class Boundary
+public class PlayerBoundary
 {
 	public float xMin, xMax, zMin, zMax;
 }
@@ -12,7 +18,7 @@ public class Player : MonoBehaviour
 {
 	//PUBLIC INSTANCE VARIABLES
 	public float speed = 6f; //f means floating point
-	public Boundary boundary;
+	public PlayerBoundary boundary;
 	
 	//PRIVATE INSTANCE VARIABLES
 	private Vector3 _movement;
