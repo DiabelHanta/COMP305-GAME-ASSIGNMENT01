@@ -2,7 +2,7 @@
  * NAME:	Khandker Hussain
  * ID:		300773610
  * DATE:	11/26/2015
- * CODE:	Demonstrated in class
+ * CODE:	Class Demo + Space Shooter Tutorial
  */
 using UnityEngine;
 using System.Collections;
@@ -10,6 +10,10 @@ using System.Collections;
 public class GameController : MonoBehaviour 
 {
 	//PUBLIC INSTANCE VARIABLES
+	public int EnemyCount;
+	public GameObject enemy;
+
+
 	public GameObject hazard;
 	public Vector3 spawnValues;
 	public int hazardCount;
@@ -30,6 +34,9 @@ public class GameController : MonoBehaviour
 	//UPDATE FIRST FRAME
 	void Start()
 	{
+		this._GenerateClouds ();
+
+
 		//booleans to ensure variables won't be called
 		_gameover = false;
 		_restart = false;
@@ -61,6 +68,15 @@ public class GameController : MonoBehaviour
 		}
 	}
 	//METHODS:
+	//generates clouds
+	private void _GenerateClouds()
+	{
+		for(int count = 0; count < this.EnemyCount; count++)
+		{
+			Instantiate(enemy);
+		}
+	}
+
 	//method to spawn waves of asteroids
 	IEnumerator SpawnWaves() //note: IEnumerator is...
 	{

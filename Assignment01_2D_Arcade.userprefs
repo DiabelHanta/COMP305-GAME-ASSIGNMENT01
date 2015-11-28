@@ -1,9 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\EnemyBunnyController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\_Scripts\GameController.cs">
     <Files>
-      <File FileName="Assets\_Scripts\EnemyBunnyController.cs" Line="80" Column="16" />
-      <File FileName="c:\Users\Faim\Desktop\Assignment01_2D_Arcade\Assets\_Scripts\Player.cs" Line="12" Column="28" />
+      <File FileName="Assets\_Scripts\GameController.cs" Line="5" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

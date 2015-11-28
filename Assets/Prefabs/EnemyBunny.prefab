@@ -28,10 +28,10 @@ GameObject:
   - 95: {fileID: 9568310}
   - 54: {fileID: 5489532}
   - 136: {fileID: 13627252}
-  - 135: {fileID: 13540920}
   - 82: {fileID: 8224710}
   - 114: {fileID: 11476288}
   - 114: {fileID: 11497570}
+  - 114: {fileID: 11442674}
   m_Layer: 9
   m_Name: EnemyBunny
   m_TagString: Enemy
@@ -74,7 +74,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160238}
   m_LocalRotation: {x: 0, y: -.707106829, z: 0, w: .707106709}
-  m_LocalPosition: {x: -8.28999996, y: 0, z: -11}
+  m_LocalPosition: {x: -8.28999996, y: .670000017, z: -11}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 478762}
@@ -100,9 +100,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 160238}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: Infinity
-  m_AngularDrag: Infinity
+  m_Mass: 9.99999975e-05
+  m_Drag: 0
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -195,6 +195,19 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 0
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11442674
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4bf9526cc96f8d488a361987f14e85f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackRate: .25
+  attackDamage: 10
 --- !u!114 &11476288
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -223,28 +236,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed:
-    minSpeed: .5
-    maxSpeed: 1.20000005
+    minSpeed: .100000001
+    maxSpeed: .5
   drift:
     minDrift: -1
     maxDrift: 1
   boundary:
     xMin: -12.5
     xMax: 11.5
-    zMin: -5
-    zMax: 5
---- !u!135 &13540920
-SphereCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 160238}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: .800000012
-  m_Center: {x: 0, y: .800000012, z: 0}
+    zMin: -1
+    zMax: 3
 --- !u!136 &13627252
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -1393,7 +1394,43 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: boundary.zMax
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: boundary.zMin
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Drag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: speed.maxSpeed
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: speed.minSpeed
+      value: .100000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Mass
+      value: 9.99999975e-05
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: attackRate
+      value: .25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 160238}
